@@ -50,7 +50,7 @@
   "dependencies": {
     "astro-boilerplate-components": "^1.0.8",
     "daisyui": "^2.24.0",
-    "date-fns": "^2.28.0"
+    "date-fns": "^2.29.2"
   },
   "volta": {
     "node": "16.15.1"
