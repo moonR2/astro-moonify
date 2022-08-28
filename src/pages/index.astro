@@ -1,7 +1,6 @@
 ---
 import type { IFrontmatter } from 'astro-boilerplate-components';
 
-import { CTA } from '@/components/CTA';
 import { Hero } from '@/components/Hero';
 import { ProjectList } from '@/components/ProjectList';
 import { RecentPosts } from '@/components/RecentPosts';
@@ -21,5 +20,4 @@ const { description } = AppConfig;
   <Hero />
   <RecentPosts postList={lastThreePosts} />
   <ProjectList />
-  <CTA />
 </Base>

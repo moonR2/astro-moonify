@@ -23,9 +23,11 @@ Truffle nos brinda la posibilidad de interactuar con los contratos a través de 
 
 ### Consola
 Primeramente necesitamos ingresar a la consola de desarrollador espécificando la red en la que hicimos el deploy del contrato. 
+<div class="mockup-code">
 ```bash
 truffle console --network kovan
 ```
+</div>
 
 La consola de truffle nos permite interactuar con nuestros contratos usando JavaScript. Ahora necesitamos obtener la abstracción de nuestro contrato, si seguiste el tutorial anterior recordaras que el nombre del contrato de mi token ERC20 es Moonify.
 ```javascript
@@ -38,15 +40,22 @@ truffle(kovan)> instance
 Como podrás notar la abstracción del contrato contiene tanto las funciones, variables, eventos y address de nuestro token. Con la abstracción lista ya podemos empezar a usar las funciones de nuestro contrato. 
 
 Probemos pausar las transferencias de nuestro token, para esto habiamos creado una función pause que no recibe ningún parametro pero que solo puede ser llamada por el dueño del contrato. 
+<div class="mockup-code">
+
 ```solidity
 function pause() public onlyOwner {
     _pause();
 }
 ```
+
+</div>
+
 Para llamarla basta con escribir el siguiente comando: 
+
 ```javascript
 truffle(kovan)> instance.pause()
 ```
+
 Ahora por ejemplo si queremos enviar nuestros tokens a otra cuenta usando metamask, veremos que nuestra transacción tendrá un error. De hecho, podemos revisar nuestra transacción fallida en Etherscan y observar que la transacción ha sido revertida y nuestro ETH devuelto. 
 
 
