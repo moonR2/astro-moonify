@@ -5,7 +5,16 @@ module.exports = {
     './node_modules/astro-boilerplate-components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        shine: 'shine 1s',
+      },
+      keyframes: {
+        shine: {
+          '100%': { left: '125%' },
+        },
+      },
+    },
   },
   plugins: [
     require('@tailwindcss/aspect-ratio'),
@@ -13,6 +22,6 @@ module.exports = {
     require('daisyui'),
   ],
   daisyui: {
-    themes: ['pastel', 'night'],
+    themes: ['night'],
   },
 };
