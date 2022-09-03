@@ -15,7 +15,7 @@ const BlogCard = (props: IBlogCardProps) => (
     className="rounded-md transition-all hover:ring-2 hover:ring-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500"
     href={props.instance.url}
   >
-    <div className="overflow-hidden rounded-md bg-base-200 text-base-content shadow-xl">
+    <div className="min-h-full overflow-hidden rounded-md bg-base-200 text-base-content shadow-xl">
       <div className="aspect-w-3 aspect-h-2">
         <img
           className="h-full w-full object-cover object-center"
