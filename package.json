@@ -49,6 +49,7 @@
   },
   "dependencies": {
     "astro-boilerplate-components": "^1.0.8",
+    "astro-icon": "^0.7.3",
     "daisyui": "^2.24.0",
     "date-fns": "^2.29.2"
   },

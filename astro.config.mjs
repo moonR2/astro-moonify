@@ -30,4 +30,9 @@ export default defineConfig({
     robotsTxt(),
     astroImageTools,
   ],
+  vite: {
+    ssr: {
+      external: ['svgo'],
+    },
+  },
 });
