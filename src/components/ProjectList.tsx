@@ -58,7 +58,7 @@ const ProjectList = () => (
         category={
           <>
             <Tags color={ColorTags.BLUE}>Lua</Tags>
-            <Tags color={ColorTags.SKY}>Awesome WM</Tags>
+            <Tags color={ColorTags.SKY}>AwesomeWM</Tags>
           </>
         }
       />

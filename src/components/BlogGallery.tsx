@@ -15,7 +15,7 @@ const BlogCard = (props: IBlogCardProps) => (
     className="rounded-md transition-all hover:ring-2 hover:ring-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500"
     href={props.instance.url}
   >
-    <div className="min-h-full overflow-hidden rounded-md bg-base-200 text-base-content shadow-xl">
+    <div className="min-h-full overflow-hidden rounded-md bg-base-300 text-base-content shadow-xl">
       <div className="aspect-w-3 aspect-h-2">
         <img
           className="h-full w-full object-cover object-center"
@@ -25,7 +25,7 @@ const BlogCard = (props: IBlogCardProps) => (
         />
       </div>
       <div className="px-3 pt-4 pb-6 text-center">
-        <h2 className="text-xl font-semibold">
+        <h2 className="text-xl font-semibold group-hover:text-primary-focus">
           {props.instance.frontmatter.title}
         </h2>
         <div className="mt-1 text-xs text-gray-400">
@@ -41,8 +41,8 @@ const BlogCard = (props: IBlogCardProps) => (
 
 const BlogGallery = (props: IRecentPostsProps) => (
   <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-    {props.postList.map((elt) => (
-      <BlogCard instance={elt} />
+    {props.postList.map((elt, index) => (
+      <BlogCard key={index} instance={elt} />
     ))}
   </div>
 );
