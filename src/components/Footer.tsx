@@ -1,10 +1,16 @@
-import { FooterCopyright, Section } from 'astro-boilerplate-components';
-
-import { AppConfig } from '@/utils/AppConfig';
+import { Section } from 'astro-boilerplate-components';
 
 const Footer = () => (
   <Section>
-    <FooterCopyright site_name={AppConfig.site_name} />
+    <div className="border-t border-gray-600 pt-5">
+      2022 Moonify. Website built with Astro + React using this{' '}
+      <a
+        href="https://github.com/ixartz/Astro-boilerplate"
+        className="text-primary-focus"
+      >
+        boilerplate
+      </a>
+    </div>
   </Section>
 );
 

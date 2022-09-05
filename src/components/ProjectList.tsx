@@ -41,7 +41,7 @@ const ProjectList = () => (
         name="This webpage"
         description="I created this webpage as a remake of my old website. Also to try Astro with React and practice some CSS with Tailwind."
         link="https://github.com/moonR2/astro-moonify"
-        img={{ src: '/assets/images/project-maps.png', alt: 'Project Maps' }}
+        img={{ src: '/assets/images/thisweb.jpg', alt: 'Project Maps' }}
         category={
           <>
             <Tags color={ColorTags.FUCHSIA}>Astro.js</Tags>

@@ -16,7 +16,7 @@ const RecentPosts = (props: IRecentPostsProps) => (
           Recent <span className="text-accent">Posts</span>
         </div>
 
-        <div className="text-sm">
+        <div className="text-sm hover:text-primary-focus">
           <a href="/posts">View all Posts →</a>
         </div>
       </div>

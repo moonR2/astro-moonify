@@ -3,7 +3,7 @@ export const AppConfig = {
   title: "Moonify's Personal Website",
   description:
     'My personal website built with Astro using React and Tailwind CSS with Daisyui',
-  author: 'MoonR2',
+  author: 'Moonify',
   locale_region: 'en-us',
   locale: 'en',
 };

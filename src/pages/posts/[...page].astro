@@ -4,12 +4,12 @@ import type {
   IFrontmatter,
 } from 'astro-boilerplate-components';
 import {
-  BlogGallery,
   NewerOlderPagination,
   PaginationHeader,
   Section,
 } from 'astro-boilerplate-components';
 
+import { BlogGallery } from '@/components/BlogGallery';
 import Base from '@/templates/Base.astro';
 import { AppConfig } from '@/utils/AppConfig';
 import { sortByDate } from '@/utils/Posts';
@@ -41,8 +41,8 @@ const description =
 <Base head={{ title, description }}>
   <Section>
     <PaginationHeader
-      title='Random title here'
-      description='Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+      title='Sometimes I like writing about things.'
+      description='Hopefully I will write more in the future.'
     />
   </Section>
 
@@ -53,5 +53,4 @@ const description =
   <Section>
     <NewerOlderPagination page={page} />
   </Section>
-
 </Base>
