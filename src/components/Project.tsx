@@ -19,7 +19,7 @@ const Project = (props: IProjectProps) => (
           <img
             src={props.img.src}
             alt={props.img.alt}
-            className="w-42 h-40 max-w-md"
+            className="h-40 w-72"
             loading="lazy"
           />
         </a>
