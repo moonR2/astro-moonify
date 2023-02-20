@@ -1,6 +1,6 @@
-import { ColorTags, Section, Tags } from 'astro-boilerplate-components';
-
 import { Project } from './Project';
+import { Section } from './Section';
+import { ColorTags, Tags } from './Tags';
 
 const ProjectList = () => (
   <Section

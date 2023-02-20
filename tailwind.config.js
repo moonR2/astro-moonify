@@ -1,9 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies, global-require */
 module.exports = {
-  content: [
-    './src/**/*.{astro,html,js,jsx,svelte,ts,tsx,vue}',
-    './node_modules/astro-boilerplate-components/**/*.{js,ts,jsx,tsx}',
-  ],
+  content: ['./src/**/*.{astro,html,js,jsx,svelte,ts,tsx,vue}'],
   theme: {
     extend: {
       animation: {
@@ -22,6 +19,20 @@ module.exports = {
     require('daisyui'),
   ],
   daisyui: {
-    themes: ['night'],
+    themes: [
+      'night',
+      {
+        myTheme: {
+          primary: '#FF6319',
+          secondary: '#dbc81a',
+          neutral: '#19212A',
+          'base-100': '#212737',
+          info: '#77A7D4',
+          success: '#19C28D',
+          warning: '#E2B512',
+          error: '#EF2A4A',
+        },
+      },
+    ],
   },
 };

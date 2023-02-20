@@ -1,6 +1,7 @@
 import type { MarkdownInstance } from 'astro';
-import type { IFrontmatter } from 'astro-boilerplate-components';
 import { format } from 'date-fns';
+
+import type { IFrontmatter } from '@/types/IFrontmatter';
 
 type IRecentPostsProps = {
   postList: MarkdownInstance<IFrontmatter>[];

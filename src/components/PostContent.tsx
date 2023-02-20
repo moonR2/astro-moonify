@@ -1,5 +1,6 @@
-import type { IFrontmatter } from 'astro-boilerplate-components';
 import type { ReactNode } from 'react';
+
+import type { IFrontmatter } from '@/types/IFrontmatter';
 
 declare type IPostContentProps = {
   content: IFrontmatter;

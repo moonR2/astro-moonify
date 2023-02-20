@@ -1,9 +1,9 @@
 ---
-import type { IFrontmatter } from 'astro-boilerplate-components';
-
+import type { IFrontmatter } from '@/types/IFrontmatter';
 import { BlogPost } from '@/components/BlogPost';
 import Base from '@/templates/Base.astro';
 import { AppConfig } from '@/utils/AppConfig';
+import { PostHeader } from '@/components/PostHeader';
 
 export interface Props {
   content: IFrontmatter;
@@ -14,7 +14,22 @@ const title = `${content.title} - ${AppConfig.site_name}`;
 ---
 
 <Base head={{ title, description: content.description }}>
-  <BlogPost frontmatter={content}>
-    <slot></slot>
-  </BlogPost>
+
+  <div class="mx-auto max-w-screen-lg px-3 py-6">
+    <PostHeader content={content} author={AppConfig.author} />
+  <div class="mx-auto mt-5 max-w-fit">
+    <div class="aspect-w-4 aspect-h-2">
+      <img
+        class="h-full w-full rounded-lg object-cover object-center"
+        src={content.imgSrc}
+        alt={content.imgAlt}
+        loading="lazy"
+      ></img>
+    </div>
+    <div class="prose-invert prose mt-8 prose-img:rounded-md lg:prose-xl">
+    <slot />
+    </div>
+  </div>
+
+  </div>
 </Base>
