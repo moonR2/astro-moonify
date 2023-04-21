@@ -2,7 +2,7 @@
 layout: "@/templates/BasePost.astro"
 title: "Creciendo como Programador: Estrategias y Reflexiones para Mejorar como Desarrollador"
 description: En este artículo te comparto mi experiencia y consejos sobre cómo superar obstáculos y mejorar como desarrollador, abordando temas como aprender vim motions y atajos, tomar apuntes, aprender nuevos lenguajes de programación, consultar la documentación y aceptar que nunca se sabe todo.
-pubDate: 2023-20-04T00:00:00Z
+pubDate: 2023-04-21T00:45:44.380Z
 imgSrc: "/assets/images/improve.jpg"
 imgAlt: "Window managers"
 ---
