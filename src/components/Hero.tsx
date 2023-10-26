@@ -15,12 +15,10 @@ const Hero = () => (
             <span className="text-xl">🌙</span>
           </div>
           <p className="py-5 text-2xl">
-            My name is Andrés Orozco (aka moonify) and I am an IT engineer from
-            Ecuador 🇪🇨. Currently I'm working at{' '}
-            <a className="underline" href="https://www.wiibiq.com/es">
-              Wiibiq
-            </a>{' '}
-            as full-stack developer using React/React-native and Django.
+            I'm Andrés Orozco, an IT engineer from Ecuador 🇪🇨 with more than two
+            years of professional experience as a full-stack developer. I
+            specialize in TypeScript, React, and Python and have worked on
+            successful projects using React, React-Native, Django, and FastAPI.
             <br />
             <br />
             <i>Philosophy is man's best super power.</i>

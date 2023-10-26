@@ -12,6 +12,55 @@ const ProjectList = () => (
   >
     <div className="flex flex-col gap-6">
       <Project
+        name="T3-Twitter"
+        description="A Twitter clone developed using the T3‑Stack, which consists of TypeScript, NextJS, tRPC and Tailwind. Hosted on Vercel and implemented an automated deployment workflow using GitHub Actions."
+        link="https://github.com/moonR2/t3-chat"
+        img={{
+          src: '/assets/images/gipps-simulation.png',
+          alt: 'T3-Twitter',
+        }}
+        category={
+          <>
+            <Tags color={ColorTags.BLUE}>React</Tags>
+            <Tags color={ColorTags.SKY}>NextJS</Tags>
+            <Tags color={ColorTags.INDIGO}>tRPC</Tags>
+            <Tags color={ColorTags.ROSE}>TypeScript</Tags>
+            <Tags color={ColorTags.FUCHSIA}>Tailwind</Tags>
+            <Tags color={ColorTags.EMERALD}>Prisma</Tags>
+          </>
+        }
+      />
+      <Project
+        name="TFT Discord Bot"
+        description="A Discord bot that allows you to get information about the game Teamfight Tactics. It was developed using Python, Discord.py and Riot Games API."
+        link="https://github.com/moonR2/tft_lolsadmemes"
+        img={{
+          src: '/assets/images/gipps-simulation.png',
+          alt: 'TFT Discord Bot',
+        }}
+        category={
+          <>
+            <Tags color={ColorTags.LIME}>Python</Tags>
+            <Tags color={ColorTags.SKY}>Discord.py</Tags>
+            <Tags color={ColorTags.INDIGO}>Riot Games API</Tags>
+          </>
+        }
+      />
+      <Project
+        name="This webpage"
+        description="I created this webpage as a remake of my old website. Also to try Astro with React and practice some CSS with Tailwind."
+        link="https://github.com/moonR2/astro-moonify"
+        img={{ src: '/assets/images/thisweb.jpg', alt: 'Project Maps' }}
+        category={
+          <>
+            <Tags color={ColorTags.NEUTRAL}>Astro.js</Tags>
+            <Tags color={ColorTags.BLUE}>React</Tags>
+            <Tags color={ColorTags.ROSE}>TypeScript</Tags>
+            <Tags color={ColorTags.FUCHSIA}>Tailwind</Tags>
+          </>
+        }
+      />
+      <Project
         name="Gipp's Traffic Simulation"
         description="A Python implementation of Gipps’ Car-Following model for traffic simulation. This was my degree project so maybe you will find the code somewhat messy."
         link="https://github.com/moonR2/GippsTrafficSimulation"
@@ -22,6 +71,9 @@ const ProjectList = () => (
         category={
           <>
             <Tags color={ColorTags.LIME}>Python</Tags>
+            <Tags color={ColorTags.EMERALD}>Matplotlib</Tags>
+            <Tags color={ColorTags.SKY}>NumPy</Tags>
+            <Tags color={ColorTags.INDIGO}>NetworkX</Tags>
           </>
         }
       />
@@ -38,21 +90,8 @@ const ProjectList = () => (
         }
       />
       <Project
-        name="This webpage"
-        description="I created this webpage as a remake of my old website. Also to try Astro with React and practice some CSS with Tailwind."
-        link="https://github.com/moonR2/astro-moonify"
-        img={{ src: '/assets/images/thisweb.jpg', alt: 'Project Maps' }}
-        category={
-          <>
-            <Tags color={ColorTags.FUCHSIA}>Astro.js</Tags>
-            <Tags color={ColorTags.INDIGO}>Tailwind</Tags>
-            <Tags color={ColorTags.ROSE}>TypeScript</Tags>
-          </>
-        }
-      />
-      <Project
         name="My AwesomeWM configuration"
-        description="AwesomeWM configuration inspired by @rxyhn but optmized for desktops and with keyboard layout switcher."
+        description="AwesomeWM configuration inspired by @rxyhn but optmized for desktops with keyboard layout switcher."
         link="https://github.com/moonR2/awesomeWM-for-desktops"
         img={{ src: '/assets/images/awesome.jpg', alt: 'Awesome WM' }}
         category={
