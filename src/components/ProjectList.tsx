@@ -16,7 +16,7 @@ const ProjectList = () => (
         description="A Twitter clone developed using the T3‑Stack, which consists of TypeScript, NextJS, tRPC and Tailwind. Hosted on Vercel and implemented an automated deployment workflow using GitHub Actions."
         link="https://github.com/moonR2/t3-chat"
         img={{
-          src: '/assets/images/gipps-simulation.png',
+          src: '/assets/images/t3twitter.jpg',
           alt: 'T3-Twitter',
         }}
         category={
@@ -35,7 +35,7 @@ const ProjectList = () => (
         description="A Discord bot that allows you to get information about the game Teamfight Tactics. It was developed using Python, Discord.py and Riot Games API."
         link="https://github.com/moonR2/tft_lolsadmemes"
         img={{
-          src: '/assets/images/gipps-simulation.png',
+          src: '/assets/images/discordbot.jpg',
           alt: 'TFT Discord Bot',
         }}
         category={
@@ -50,7 +50,7 @@ const ProjectList = () => (
         name="This webpage"
         description="I created this webpage as a remake of my old website. Also to try Astro with React and practice some CSS with Tailwind."
         link="https://github.com/moonR2/astro-moonify"
-        img={{ src: '/assets/images/thisweb.jpg', alt: 'Project Maps' }}
+        img={{ src: '/assets/images/webpage.jpg', alt: 'Project Maps' }}
         category={
           <>
             <Tags color={ColorTags.NEUTRAL}>Astro.js</Tags>
@@ -65,7 +65,7 @@ const ProjectList = () => (
         description="A Python implementation of Gipps’ Car-Following model for traffic simulation. This was my degree project so maybe you will find the code somewhat messy."
         link="https://github.com/moonR2/GippsTrafficSimulation"
         img={{
-          src: '/assets/images/gipps-simulation.png',
+          src: '/assets/images/gipss.jpg',
           alt: 'Gipps Traffic Simulation',
         }}
         category={
@@ -81,7 +81,7 @@ const ProjectList = () => (
         name="FN-Tools"
         description="This was a set of tools that allow you to change and force certain configuration for Fornite BR from Epic Games. The project now is deprecated."
         link="https://github.com/moonR2/FN-Tools"
-        img={{ src: '/assets/images/fn-tools.png', alt: 'FN-Tools' }}
+        img={{ src: '/assets/images/fn-tools.jpg', alt: 'FN-Tools' }}
         category={
           <>
             <Tags color={ColorTags.VIOLET}>C#</Tags>
