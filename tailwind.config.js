@@ -20,7 +20,7 @@ module.exports = {
   ],
   daisyui: {
     themes: [
-      'night',
+      'dim',
       {
         myTheme: {
           primary: '#FF6319',

@@ -12,6 +12,22 @@ const ProjectList = () => (
   >
     <div className="flex flex-col gap-6">
       <Project
+        name="TFT LATAM HUB"
+        description="It is a space to find information and resources about the current best TFT players in LATAM. The application was built with the T3-Stack while the player data is obtained using the Riot API."
+        link="https://tftlatam.vercel.app/"
+        img={{ src: '/assets/images/tftlatamhub.jpg', alt: 'TFT LATAM HUB' }}
+        category={
+          <>
+            <Tags color={ColorTags.BLUE}>React</Tags>
+            <Tags color={ColorTags.SKY}>NextJS</Tags>
+            <Tags color={ColorTags.INDIGO}>tRPC</Tags>
+            <Tags color={ColorTags.ROSE}>TypeScript</Tags>
+            <Tags color={ColorTags.FUCHSIA}>Tailwind</Tags>
+            <Tags color={ColorTags.EMERALD}>Prisma</Tags>
+          </>
+        }
+      />
+      <Project
         name="T3-Twitter"
         description="A Twitter clone developed using the T3‑Stack, which consists of TypeScript, NextJS, tRPC and Tailwind. Hosted on Vercel and implemented an automated deployment workflow using GitHub Actions."
         link="https://github.com/moonR2/t3-chat"
@@ -86,18 +102,6 @@ const ProjectList = () => (
           <>
             <Tags color={ColorTags.VIOLET}>C#</Tags>
             <Tags color={ColorTags.BLUE}>.NET</Tags>
-          </>
-        }
-      />
-      <Project
-        name="My AwesomeWM configuration"
-        description="AwesomeWM configuration inspired by @rxyhn but optmized for desktops with keyboard layout switcher."
-        link="https://github.com/moonR2/awesomeWM-for-desktops"
-        img={{ src: '/assets/images/awesome.jpg', alt: 'Awesome WM' }}
-        category={
-          <>
-            <Tags color={ColorTags.BLUE}>Lua</Tags>
-            <Tags color={ColorTags.SKY}>AwesomeWM</Tags>
           </>
         }
       />

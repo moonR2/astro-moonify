@@ -15,10 +15,10 @@ const Hero = () => (
             <span className="text-xl">🌙</span>
           </div>
           <p className="py-5 text-2xl">
-            I'm Andrés Orozco, an IT engineer from Ecuador 🇪🇨 with more than two
-            years of professional experience as a full-stack developer. I
-            specialize in TypeScript, React, and Python and have worked on
-            successful projects using React, React-Native, Django, and FastAPI.
+            I'm Andrés Orozco, an IT engineer with more than two years of
+            professional experience as a full-stack developer. I specialize in
+            TypeScript, React, and Python and have worked on successful projects
+            using React, React-Native, Django, and FastAPI.
             <br />
             <br />
             <i>Philosophy is man's best super power.</i>
